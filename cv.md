@@ -1,4 +1,5 @@
 # Diana Butiakova
+### Front-end Developer
 
 ## Contacts
 Location: Bishkek, Kyrgyzstan\
