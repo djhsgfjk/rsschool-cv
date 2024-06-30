@@ -116,6 +116,6 @@ __Kazan (Volga region) Federal University__\
 Institute of Computational Mathematics and Information Technology,
 Fundamental Informatics and Information Technology
 
-
 ## Languages
-(уровень английского языка, если была языковая практика, расскажите о ней)
+- English - Upper-intermediate
+- Russian - Native
