@@ -9,7 +9,7 @@ E-mail: butyakova01@gmail.com\
 
 
 ## About me 
-(ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
+I started my career as a systems analyst. Currently, I work as a JavaScript developer, actively learning various web technologies. I aspire to grow into a full-fledged front-end developer.
 
 ## Skills 
 (языки программирования, фреймворки, методологии, системы контроля версий и инструменты разработки, которыми вы владеете)
