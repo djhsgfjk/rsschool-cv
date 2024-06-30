@@ -111,7 +111,11 @@ Bank calculator with credit and deposit calculators.
 ![Bank calculator](credit-calculator.png)
 
 ## Education
-(включая пройденные курсы и тренинги)
+### Bachelor's degree, 2023
+__Kazan (Volga region) Federal University__\
+Institute of Computational Mathematics and Information Technology,
+Fundamental Informatics and Information Technology
+
 
 ## Languages
 (уровень английского языка, если была языковая практика, расскажите о ней)
