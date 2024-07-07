@@ -1,5 +1,8 @@
 :root {
     --bar-height: 40px;
+    --main-color: white;
+    --second-color: rgb(197,203,227);
+    --font-second-color: rgb(146,151,173);
 }
 
 body {
@@ -10,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--main-color);
 }
 
 ul {
@@ -30,7 +34,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;  
+    background-color: var(--second-color);  
     display: flex;
     justify-content: space-between;
 }
@@ -38,8 +42,9 @@ a {
 .nav__bar {
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--font-second-color);
     margin-left: 20px;
+    font-weight: bold;
 } 
 
 .bar__icon {
@@ -55,12 +60,13 @@ a {
 }
 
 .contents__item {
-    background-color: black;
+    background-color: var(--second-color);
     margin-left: 10px;
+    font-weight: bold;
 }
 
 .contents-item__link {
-    color: white !important;
+    color: var(--font-second-color) !important;
 }
 
 @media only screen and (max-width: 800px) {
@@ -118,13 +124,14 @@ a {
     height: 10em;
 }
 
+header {
+    margin: 40px;
+}
+
+
 main {
     max-width: calc(80% - 80px);
     margin: 0 40px 40px 40px;
-}
-
-header {
-    margin: 40px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -133,6 +140,16 @@ header {
         max-width: calc(100% - 80px);
     }
     
+}
+
+.section__title {
+    background-color: var(--second-color);
+    color: var(--font-second-color);
+    padding: 4px;
+}
+
+.section {
+    margin-bottom: 40px;
 }
 
 .code-container {
