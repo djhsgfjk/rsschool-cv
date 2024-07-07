@@ -80,7 +80,6 @@ This is a university fullstack project that represents a kanban-board with drag-
 - Python
 - Docker - for deployment
 
-#### [Build](http://185.124.109.30:3000)
 #### [Source code](github.com/djhsgfjk/task-manager-app)
 
 ### 2048 game
@@ -95,7 +94,7 @@ Simple 2048 web-game.
 #### [Build](djhsgfjk.github.io/2048)
 #### [Source code](github.com/djhsgfjk/2048/tree/main)
 
-![2048 game](2048.png)
+![2048 game](assets/2048.png)
 
 ### Bank calculator
 Bank calculator with credit and deposit calculators.
@@ -109,7 +108,7 @@ Bank calculator with credit and deposit calculators.
 #### [Build](djhsgfjk.github.io/bank-calculator)
 #### [Source code](github.com/djhsgfjk/bank-calculator)
 
-![Bank calculator](credit-calculator.png)
+![Bank calculator](assets/credit-calculator.png)
 
 ## Education
 ### Bachelor's degree, 2023

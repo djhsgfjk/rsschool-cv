@@ -3,11 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
 <body>
-    <header>
-        <h1>CV - Butiakova Diana</h1>
+    <nav class="nav">
+        <div class="nav__bar bar"><span class="bar__icon">☰ </span>CV - Butiakova Diana</div>
+        <ul class="nav__contents contents">
+            <li class="contents__item contents-item contents-item">
+                <a class="contents-item__link" href="#contacts">Contacts</a>
+            </li>
+            <li class="contents__item contents-item">
+                <a class="contents-item__link" href="#about-me">About me</a>
+            </li>
+            <li class="contents__item contents-item">
+                <a class="contents-item__link" href="#skills">Skills</a>
+            </li>
+            <li class="contents__item contents-item">
+                <a class="contents-item__link" href="#code-example">Code Example</a>
+            </li>
+            <li class="contents__item contents-item">
+                <a class="contents-item__link" href="#experience">Experience</a>
+            </li>
+            <li class="contents__item contents-item">
+                <a class="contents-item__link" href="#education">Education</a>
+            </li>
+            <li class="contents__item contents-item">
+                <a class="contents-item__link" href="#languages">Languages</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
+        <img alt="Butiakova Diana" class="header-photo" src="assets/diana_butiakova.png">
+        <h1 class="header__title">Butiakova Diana</h1>
+        <h2 class="header__description">Front-end Developer</h2>
     </header>
+    <main>
+        <section class="section">
+            <h2 class="section__title" id="contacts">Contacts</h2>
+            <div class="section__description--contacts contacts">
+                <ul>
+                    <li>Location: Bishkek, Kyrgyzstan</li>
+                    <li>E-mail: butyakova01@gmail.com</li>
+                    <li>
+                        <a href="https://t.me/imbluedabudie">Telegram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/diana-butyakova">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/djhsgfjk">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__title" id="about-me">About me</h2>
+            <div class="section__description--about-me about-me">
+                I started my career as a systems analyst. Currently, I work as a JavaScript developer on a low-code platform, actively learning various web technologies. I aspire to grow into a full-fledged front-end developer.
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__title" id="skills">Skills</h2>
+            <div class="section__description--skills skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>WebPack</li>
+                    <li>React</li>
+                    <li>Fetch API / Axios</li>
+                    <li>Redux</li>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>Figma</li>
+                </ul>                
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__title" id="code-example">Code Example</h2>
+            <div class="section__description--code-example code-example">
+                <div class="code-example__code-container code-container">
+                    <code class="code-container__code code">
+'use strict';
+const Vector = class{
+
+constructor(arr) {
+    this.vector = arr;  
+};
+
+toString() {
+    return '(' + this.vector.join(',') + ')';
+};
+
+add(val) {
+    if (this.vector.length !== val.vector.length)
+    throw new Error();
+    return new Vector(this.vector.map((x, i) => x + val.vector[i]));
+};
+
+subtract(val) {
+    if (this.vector.length !== val.vector.length)
+    throw new Error();
+    return new Vector(this.vector.map((x, i) => x - val.vector[i]));
+};
+
+dot(val) {
+    if (this.vector.length !== val.vector.length)
+    throw new Error();
+    return this.vector.reduce((preV, curV, i) => preV + curV * val.vector[i], 0);
+};
+
+norm() {
+    return Math.sqrt(this.vector.reduce((preV, curV, i) => preV + Math.pow(curV, 2), 0));
+};
+
+equals(val) {
+    return this.vector.toString() === val.vector.toString();
+};
+}
+                    </code>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__title" id="experience">Experience</h2>
+            <div class="section__description--experience experience">
+                <div class="experience__project--task-management-application project">
+                    <div class="project__main">
+                        <h3 class="project__title">Fullstack task management application</h3>
+                        <p class="project__description">This is a university fullstack project that represents a kanban-board with drag-and-drop lists and cards.</p>
+                        <div class="project__stack">
+                            <h4>Frontend Stack:</h4>
+                            <ul>
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Axios</li>
+                                <li>Docker - for deployment</li>
+                            </ul>
+                            <h4>Backend Stack:</h4>
+                            <ul>
+                                <li>Django</li>
+                                <li>Python</li>
+                                <li>Docker - for deployment</li>
+                            </ul>
+                        </div>
+                        <div class="project__links">
+                            <p><a href="https://github.com/djhsgfjk/task-manager-app">Source code</a></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>  
+                <div class="experience__project--2048 project">
+                    <div class="project__main">
+                        <h3 class="project__title">2048 game</h3>
+                        <p class="project__description">Simple 2048 web-game.</p>
+                        <div class="project__stack">
+                            <h4>Stack:</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>WebPack</li>
+                            </ul>
+                        </div>
+                        <div class="project__links">
+                            <p><a href="https://djhsgfjk.github.io/2048">Build</a></p>
+                            <p><a href="https://github.com/djhsgfjk/2048/tree/main">Source code</a></p>
+                        </div>
+                    </div>
+                    <div class="project__assets">
+                        <img alt="2048 game" src="assets/2048.png">
+                    </div>
+                </div>
+                <hr>
+                <div class="experience__project--bank-calculator project">
+                    <div class="project__main">
+                        <h3 class="project__title">Bank calculator</h3>
+                        <p class="project__description">Bank calculator with credit and deposit calculators.</p>
+                        <div class="project__stack">
+                            <h4>Stack:</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>WebPack</li>
+                            </ul>
+                        </div>
+                        <div class="project__links">
+                            <p><a href="https://djhsgfjk.github.io/bank-calculator">Build</a></p>
+                            <p><a href="https://github.com/djhsgfjk/bank-calculator">Source code</a></p>
+                        </div>
+                    </div>
+                    <div class="project__assets">
+                        <img alt="Bank calculator" src="assets/credit-calculator.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__title" id="education">Education</h2>
+            <div class="section__description--education education">
+                <div class="education__institution institution">
+                    <h3 class="institution__title">Bachelor's degree, 2023</h3>
+                    <p class="institution__description">
+                        <strong>Kazan (Volga region) Federal University</strong><br>
+                        Institute of Computational Mathematics and Information Technology,<br>
+                        Fundamental Informatics and Information Technology
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__title" id="languages">Languages</h2>
+            <div class="section__description--languages languages">
+                <div class="language">
+                    <h3 class="languages-list__title">English</h3>
+                    <p class="languages-list__description">Upper-intermediate</p>
+                </div>
+                <div class="language">
+                    <h3 class="languages-list__title">Russian</h3>
+                    <p class="languages-list__description">Native</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__github"><a href="https://github.com/djhsgfjk">
+            <img alt="github" src="assets/GitHub_Logo.png">
+        </a></div>
+        <div class="footer__year">2024</div>
+        <div class="footer__rsschool"><a href="https://rs.school/courses/javascript-ru">
+            <img alt="rsschool" src="assets/rs_school_js_black.svg">
+        </a></div>
+    </footer>
 </body>
 </html>
