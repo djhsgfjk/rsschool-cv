@@ -13,5 +13,9 @@
   "bugs": {
     "url": "https://github.com/djhsgfjk/rsschool-cv/issues"
   },
-  "homepage": "https://github.com/djhsgfjk/rsschool-cv#readme"
+  "homepage": "https://github.com/djhsgfjk/rsschool-cv#readme",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.6",
+    "linthtml-config-htmlacademy": "^1.0.25"
+  }
 }
