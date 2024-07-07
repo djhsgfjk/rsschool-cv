@@ -184,3 +184,30 @@ header {
         margin-left: 0;
     }    
 }
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.language {
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+div.language:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .languages {
+        display: block;
+    } 
+
+    .language {
+        margin-right: 0;
+    }
+}
