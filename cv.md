@@ -80,7 +80,6 @@ This is a university fullstack project that represents a kanban-board with drag-
 - Python
 - Docker - for deployment
 
-#### [Build](http://185.124.109.30:3000)
 #### [Source code](github.com/djhsgfjk/task-manager-app)
 
 ### 2048 game
