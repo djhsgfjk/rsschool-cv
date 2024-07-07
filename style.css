@@ -9,7 +9,7 @@ body {
     margin-left: var(--sidebar-width);
 }
 
-nav {
+.nav {
     display: flex;
     align-items: center;
     position: absolute;
@@ -20,23 +20,26 @@ nav {
     color: white;
 }
 
-.sidebar {
+.nav__sidebar {
     text-align: center;
     width: var(--sidebar-width);
 }
 
-nav:hover .contents{
+.nav__contents {
+    display: none;
+}
+
+nav:hover .nav__contents{
     display: block;
     transition: 1s;
 } 
 
-nav:hover .sidebar{
+nav:hover .nav__sidebar{
     display: none;
     transition: 1s;
 }
 
 .contents {
-    display: none;
     text-align: center;
     padding: 40px !important;
 }
