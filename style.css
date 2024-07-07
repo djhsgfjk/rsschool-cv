@@ -76,7 +76,7 @@ a {
 }
 
 main {
-    max-width: calc(100% - 80px);
+    max-width: calc(80% - 80px);
     margin: 0 40px 40px 40px;
 }
 
@@ -120,14 +120,37 @@ header {
         display: none !important;
     }
     
+    main {
+        max-width: calc(100% - 80px);
+    }
+    
 }
 
 code pre{
     background: lightgray;
     border-radius: 8px;
-}
-
-pre {
     overflow: auto;
     padding: 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-height: 500px;
+}
+
+.project__main {
+    width: 40%;
+    height: min-content;
+}
+
+.project__assets{
+    width: 60%;
+}
+
+.project__assets img{
+    height: 100%;
+    max-height: 500px;
+    max-width: 100%;
 }
