@@ -52,3 +52,9 @@ nav:hover .nav__sidebar{
     color: white !important;
     text-decoration: none !important;
 }
+
+.header-photo {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
