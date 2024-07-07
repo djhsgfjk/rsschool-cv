@@ -11,7 +11,7 @@
         <div class="nav__bar bar"><span class="bar__icon">☰ </span>CV - Butiakova Diana</div>
         <ul class="nav__contents contents">
             <li class="contents__item contents-item contents-item">
-                <a class="contents-item__link" class="contents-item__link" href="#contacts">Contacts</a>
+                <a class="contents-item__link" href="#contacts">Contacts</a>
             </li>
             <li class="contents__item contents-item">
                 <a class="contents-item__link" href="#about-me">About me</a>
@@ -56,7 +56,6 @@
                 </ul>
             </div>
         </section>
-        </section>
         <section class="section">
             <h2 class="section__title" id="about-me">About me</h2>
             <div class="section__description--about-me about-me">
@@ -83,45 +82,47 @@
         <section class="section">
             <h2 class="section__title" id="code-example">Code Example</h2>
             <div class="section__description--code-example code-example">
-                <code>
-                    <pre>   'use strict';
-    const Vector = class{
+                <div class="code-example__code-container code-container">
+                    <code class="code-container__code code">
+'use strict';
+const Vector = class{
 
-    constructor(arr) {
-        this.vector = arr;  
-    };
+constructor(arr) {
+    this.vector = arr;  
+};
 
-    toString() {
-        return '(' + this.vector.join(',') + ')';
-    };
+toString() {
+    return '(' + this.vector.join(',') + ')';
+};
 
-    add(val) {
-        if (this.vector.length !== val.vector.length)
-        throw new Error();
-        return new Vector(this.vector.map((x, i) => x + val.vector[i]));
-    };
+add(val) {
+    if (this.vector.length !== val.vector.length)
+    throw new Error();
+    return new Vector(this.vector.map((x, i) => x + val.vector[i]));
+};
 
-    subtract(val) {
-        if (this.vector.length !== val.vector.length)
-        throw new Error();
-        return new Vector(this.vector.map((x, i) => x - val.vector[i]));
-    };
+subtract(val) {
+    if (this.vector.length !== val.vector.length)
+    throw new Error();
+    return new Vector(this.vector.map((x, i) => x - val.vector[i]));
+};
 
-    dot(val) {
-        if (this.vector.length !== val.vector.length)
-        throw new Error();
-        return this.vector.reduce((preV, curV, i) => preV + curV * val.vector[i], 0);
-    };
+dot(val) {
+    if (this.vector.length !== val.vector.length)
+    throw new Error();
+    return this.vector.reduce((preV, curV, i) => preV + curV * val.vector[i], 0);
+};
 
-    norm() {
-        return Math.sqrt(this.vector.reduce((preV, curV, i) => preV + Math.pow(curV, 2), 0));
-    };
+norm() {
+    return Math.sqrt(this.vector.reduce((preV, curV, i) => preV + Math.pow(curV, 2), 0));
+};
 
-    equals(val) {
-        return this.vector.toString() === val.vector.toString();
-    };
-    }</pre>
-                </code>
+equals(val) {
+    return this.vector.toString() === val.vector.toString();
+};
+}
+                    </code>
+                </div>
             </div>
         </section>
         <section class="section">

@@ -126,11 +126,16 @@ header {
     
 }
 
-code pre{
+.code-container {
     background: lightgray;
     border-radius: 8px;
     overflow: auto;
     padding: 20px;
+}
+
+.code {
+    font-family: monospace;
+    white-space: pre;
 }
 
 .project {
