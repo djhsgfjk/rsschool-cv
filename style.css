@@ -1,5 +1,5 @@
 :root {
-    --sidebar-width: 30px;
+    --bar-height: 40px;
 }
 
 body {
@@ -13,42 +13,40 @@ body {
 }
 
 .nav {
-    display: flex;
-    align-items: center;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    justify-content: center;
-    background-color: black;
+    background-color: black;  
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav__sidebar {
+.nav__bar {
+    display: flex;
+    align-items: center;
     color: white;
-    text-align: center;
-    width: var(--sidebar-width);
-}
-
-.nav__contents {
-    display: none;
-}
-
-nav:hover .nav__contents{
-    display: block;
+    margin-left: 20px;
 } 
 
-nav:hover .nav__sidebar{
+.bar__icon {
     display: none;
 }
 
 .contents {
-    text-align: center;
-    padding: 40px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: var(--bar-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px !important;
 }
 
 .contents__item {
     background-color: black;
     list-style-type: none !important;
+    margin-left: 10px;
 }
 
 .contents-item__link {
@@ -71,3 +69,41 @@ nav:hover .nav__sidebar{
 main {
     overflow: auto;
 }
+
+@media only screen and (max-width: 800px) {
+    .contents {
+        display: block;
+        height: auto;
+        margin: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .contents__item {
+        margin-right: 0px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .nav__bar {
+        height: var(--bar-height);
+        margin-left: 20px !important;
+    }
+
+    .bar__icon {
+        display: block;
+        margin-right: 10px;
+    }
+    
+    .nav__contents {
+        display: none;
+    }
+    
+    nav:hover .nav__contents{
+        display: block;
+    } 
+    
+    nav:hover .nav__bar{
+        display: none !important;
+    }
+    
+  }
