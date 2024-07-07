@@ -125,6 +125,10 @@ a {
     align-items: center;
 }
 
+.header__title {
+    margin-bottom: 0;
+}
+
 .header-photo {
     border-radius: 50%;
     width: 10em;
