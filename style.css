@@ -76,6 +76,7 @@ a {
 }
 
 main {
+    max-width: calc(100% - 80px);
     margin: 0 40px 40px 40px;
 }
 
@@ -124,4 +125,9 @@ header {
 code pre{
     background: lightgray;
     border-radius: 8px;
+}
+
+pre {
+    overflow: auto;
+    padding: 20px;
 }
