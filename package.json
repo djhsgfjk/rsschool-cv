@@ -1,0 +1,23 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "https://github.com/djhsgfjk/rsschool-cv#readme",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djhsgfjk/rsschool-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djhsgfjk/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/djhsgfjk/rsschool-cv#readme",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.6",
+    "linthtml-config-htmlacademy": "^1.0.25",
+    "stylelint": "^16.6.1",
+    "stylelint-config-htmlacademy": "^4.2.3"
+  }
+}
