@@ -1,6 +1,51 @@
+:root {
+    --sidebar-width: 30px;
+}
+
 body {
     font-family: Arial, serif;
     font-size: 16px;
-    margin: 0;
     padding: 0;
+    margin-left: var(--sidebar-width);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.sidebar {
+    text-align: center;
+    width: var(--sidebar-width);
+}
+
+nav:hover .contents{
+    display: block;
+    transition: 1s;
+} 
+
+nav:hover .sidebar{
+    display: none;
+    transition: 1s;
+}
+
+.contents {
+    display: none;
+    text-align: center;
+    padding: 40px !important;
+}
+
+.contents__item {
+    list-style-type: none !important;
+}
+
+.contents-item__link {
+    color: white !important;
+    text-decoration: none !important;
 }
